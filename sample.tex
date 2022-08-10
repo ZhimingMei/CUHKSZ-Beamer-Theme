@@ -1,16 +1,17 @@
 \documentclass{beamer}
 % \documentclass[handout]{beamer}
-\usepackage{cuhkbeamer}
+\usepackage{cuhkszbeamer}
 
+\CTEXoptions[today=old]
 
 \title[Short title]{Your Title}
 \subtitle{Your Subtitle}
 \author[Short name]{
     Your name \\
     \vspace{0.1in}
-    \footnotesize{Email: XXX@xxx.cuhk.edu.hk} \\
-    \footnotesize{Office: Pavilion of Harmony, CUHK}}
-\institute[CUHK]{The Chinese University of Hong Kong}
+    \footnotesize{Email: XXX@link.cuhk.edu.cn} \\
+    \footnotesize{School of Management and Economics}}
+\institute[CUHK]{The Chinese University of Hong Kong, Shenzhen}
 \date{\today}
 
 
@@ -122,24 +123,24 @@
 \slidesection{Equations and Blocks}
 
 \begin{frame}{Example}
-    \begin{example}
+    \begin{example}[Example]
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     \end{example}
 \end{frame}
 
 \begin{frame}{Theorem}
-    \begin{theorem}
+    \begin{theorem}[Theorem]
         $\mathbf{X}^T\mathbf{X}$ is invertible $\iff \mathbf{X}$ has linearly independent columns.
     \end{theorem}\pause
     \vspace{0.2in}
-    \begin{proof}
+    \begin{proof}[Proof]
         Firstly, note that $\mathbf{X}^T\mathbf{X} \in \mathbf{R}^{n \times n}$. We denote $N(\mathbf{X})$ as the kernel (nullspace) of $\mathbf{X}$, and $R(\mathbf{X})$ as the range (column space) of $\mathbf{X}$. \\
         We prove $\mathbf{X}^T\mathbf{X}$ and $\mathbf{X}$ share the same kernel such that once $N(\mathbf{X}) = 0$, $N(\mathbf{X}^T\mathbf{X}) = 0$ and vice versa.
     \end{proof}
 \end{frame}
 
 \begin{frame}{Proof}
-    \begin{proof}
+    \begin{proof}[Proof]
         1) Prove $N(\mathbf{X}) \subset N(\mathbf{X}^T\mathbf{X})$ \\
         $\forall v \in N(\mathbf{X})$, $\mathbf{X}^T\mathbf{X}v = \mathbf{X}^T0 = 0$ $\implies v \in N(\mathbf{X}^T\mathbf{X}) \implies N(\mathbf{X}) \subset N(\mathbf{X}^T\mathbf{X})$. \\ \pause
         
