@@ -44,13 +44,16 @@
 \definecolor{cuhkyellow}{RGB}{221,163,0}
 \definecolor{cuhkblackyellow}{RGB}{153,102,0}
 \definecolor{cuhklightyellow}{RGB}{244,223,176}
-\useoutertheme{infolines}
-% \useoutertheme{sidebar}
+
 \usetheme[height=15mm]{Madrid}
 % show the navigation symbols
 % \setbeamertemplate{navigation symbols}{}
 
 \usefonttheme{professionalfonts}
+
+% contents in headline
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{headline}[smoothbars theme]
 
 \usecolortheme[RGB={117,15,109}]{structure}
 \setbeamercolor{block title example}{use=structure,fg=white, bg=cuhkyellow}
